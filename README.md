@@ -6,6 +6,13 @@ interval: str The frequency of the data e.g. '1m' for 1 minute; '1h' for 1 hour;
 start_time: str The start time of our data e.g. "2023-09-01"
 end_time: str The end time of our data e.g. "2023-09-02"
 
+# How to run
+Download this repository then enter the project directory in the terminal and run this code
+
+    pipenv install -r requirements.txt
+    pipenv run python main.py
+The plot will pop out and the optimal weights will show in the terminal
+
 # Class method
 ## get_data(symbol, interval, start_time, end_time)
 Using requests to get the data of specific contract {symbol} with frequency of {interval} between {start_time} and {end_time}
